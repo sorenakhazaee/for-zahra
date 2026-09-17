@@ -1,0 +1,361 @@
+/* =========================================
+   PAGE 01 — INTRO ANIMATIONS
+   ========================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes softGlow {
+    0%,
+    100% {
+        opacity: 0.25;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes floatParticle {
+    0% {
+        transform: translate3d(0, 25px, 0) scale(0.7);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.7;
+    }
+
+    45% {
+        transform: translate3d(12px, -25px, 0) scale(1);
+        opacity: 0.5;
+    }
+
+    70% {
+        transform: translate3d(-8px, -65px, 0) scale(0.9);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translate3d(18px, -110px, 0) scale(0.6);
+        opacity: 0;
+    }
+}
+
+.intro-content {
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes introGlowAppear {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.65);
+    }
+
+    40% {
+        opacity: 0.35;
+    }
+
+    75% {
+        opacity: 0.65;
+    }
+
+    to {
+        opacity: 0.78;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.particle {
+    animation-name: floatParticle;
+    animation-duration: var(--particle-duration, 6s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes softGlow {
+    0%,
+    100% {
+        opacity: 0.68;
+        transform: translate(-50%, -50%) scale(0.98);
+    }
+
+    50% {
+        opacity: 0.82;
+        transform: translate(-50%, -50%) scale(1.04);
+    }
+}
+
+@keyframes page02LightAppear {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes page02TextAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+```css
+/* =========================================
+   PAGE TRANSITION — PAGE 01 → PAGE 02
+   ========================================= */
+
+@keyframes transitionDarken {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes transitionLightReveal {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.35);
+    }
+
+    45% {
+        opacity: 0.65;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+}
+
+@keyframes page02ContentReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scene-transition {
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(244, 213, 141, 0.12) 0%,
+            rgba(3, 5, 12, 0.96) 55%,
+            rgba(3, 5, 12, 1) 100%
+        );
+
+    opacity: 0;
+
+    animation:
+        transitionDarken 1.6s ease forwards;
+}
+
+.scene-transition-light {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0.35);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 233, 176, 0.34) 0%,
+            rgba(244, 213, 141, 0.16) 30%,
+            rgba(230, 184, 92, 0.05) 55%,
+            transparent 75%
+        );
+
+    filter: blur(12px);
+
+    opacity: 0;
+
+    animation:
+        transitionLightReveal 2.2s ease-in-out forwards;
+}
+
+.page02-content {
+    animation:
+        page02ContentReveal 1.8s ease 1.2s both;
+}
+```
+
+/* =========================================
+   PAGE 13 — ECLIPSE ANIMATION
+   ========================================= */
+
+@keyframes eclipseSkyDarken {
+
+    0% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 0.15;
+    }
+
+    55% {
+        opacity: 0.62;
+    }
+
+    70% {
+        opacity: 0.70;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes eclipseMoonPass {
+
+    0% {
+        left: 17%;
+    }
+
+    18% {
+        left: 30%;
+    }
+
+    42% {
+        left: 50%;
+    }
+
+    58% {
+        left: 50%;
+    }
+
+    82% {
+        left: 70%;
+    }
+
+    100% {
+        left: 83%;
+    }
+}
+
+
+@keyframes eclipseSunGlow {
+
+    0%,
+    100% {
+        opacity: 0.9;
+
+        transform: scale(1);
+    }
+
+    40% {
+        opacity: 0.65;
+
+        transform: scale(0.96);
+    }
+
+    55% {
+        opacity: 0.16;
+
+        transform: scale(0.82);
+    }
+
+    68% {
+        opacity: 0.18;
+
+        transform: scale(0.84);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: scale(1.04);
+    }
+}
+
+
+@keyframes eclipseSunCore {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0.95;
+    }
+
+    55% {
+        opacity: 0.25;
+    }
+
+    70% {
+        opacity: 0.30;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* =========================================
+   START ANIMATION ONLY WHEN PAGE 13 OPENS
+   ========================================= */
+
+#scene.story-page-13-active .eclipse-sky {
+    animation:
+        eclipseSkyDarken 12s ease-in-out forwards;
+}
+
+
+#scene.story-page-13-active .eclipse-moon {
+    animation:
+        eclipseMoonPass 12s cubic-bezier(0.45, 0, 0.55, 1) forwards;
+}
+
+
+#scene.story-page-13-active .eclipse-sun-glow {
+    animation:
+        eclipseSunGlow 12s ease-in-out forwards;
+}
+
+
+#scene.story-page-13-active .eclipse-sun-core {
+    animation:
+        eclipseSunCore 12s ease-in-out forwards;
+}

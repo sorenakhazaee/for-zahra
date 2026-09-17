@@ -1,0 +1,647 @@
+/* =========================================
+   PAGE 01 — INTRO
+   ========================================= */
+
+#scene {
+    background:
+        radial-gradient(
+            circle at center,
+            var(--deep-navy) 0%,
+            var(--night-black) 65%
+        );
+}
+
+#content {
+    opacity: 0;
+}
+
+.intro-content {
+    position: relative;
+}
+
+.intro-content h1 {
+    font-size: clamp(2.6rem, 11vw, 4.8rem);
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.2rem;
+
+    color: var(--text-main);
+
+    text-shadow:
+        0 0 10px rgba(244, 213, 141, 0.22),
+        0 0 30px rgba(244, 213, 141, 0.12),
+        0 0 60px rgba(244, 213, 141, 0.06);
+}
+
+.intro-content p {
+    font-size: clamp(1.05rem, 4.5vw, 1.4rem);
+    font-weight: 300;
+
+    color: var(--text-main);
+
+    line-height: 2;
+    opacity: 0.95;
+
+    text-shadow:
+        0 0 10px rgba(255, 248, 232, 0.12);
+}
+
+.intro-glow {
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 233, 176, 0.30) 0%,
+            rgba(244, 213, 141, 0.16) 30%,
+            rgba(230, 184, 92, 0.06) 55%,
+            transparent 75%
+        );
+
+    filter: blur(10px);
+
+    opacity: 0;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    animation:
+        introGlowAppear 4.5s ease-in-out 0.2s forwards,
+        softGlow 7s ease-in-out 4.7s infinite;
+
+    translate:
+        calc(var(--scene-x, 0px) * 0.25)
+        calc(var(--scene-y, 0px) * 0.25);
+}
+
+/* =========================================
+   PARTICLES
+   ========================================= */
+
+.particle {
+    position: absolute;
+
+    width: 2px;
+    height: 2px;
+
+    border-radius: 50%;
+
+    background: var(--sunlight);
+
+    box-shadow:
+        0 0 6px var(--sunlight),
+        0 0 12px var(--soft-gold);
+
+    opacity: 0;
+}
+
+/* =========================================
+   MOON
+   ========================================= */
+
+.moon {
+    position: absolute;
+
+    width: clamp(70px, 18vw, 120px);
+    height: clamp(70px, 18vw, 120px);
+
+    top: 11%;
+    left: 13%;
+
+    border-radius: 50%;
+
+    background: rgba(255, 248, 232, 0.10);
+
+    box-shadow:
+        0 0 20px rgba(255, 248, 232, 0.06),
+        0 0 60px rgba(255, 248, 232, 0.03);
+
+    opacity: 0.55;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    animation: moonDrift 12s ease-in-out infinite;
+
+    translate:
+        calc(var(--scene-x, 0px) * 0.25)
+        calc(var(--scene-y, 0px) * 0.25);
+}
+
+.moon-shadow {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: -8%;
+    left: 18%;
+
+    border-radius: 50%;
+
+    background: var(--night-black);
+}
+
+/* =========================================
+   PAGE 02
+   ========================================= */
+
+.page02-content {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #FFE9B0 0%,
+            #F4D58D 12%,
+            #18284A 42%,
+            #0B1228 72%,
+            #03050C 100%
+        );
+
+    opacity: 1;
+}
+
+.page02-light {
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 233, 176, 0.65) 0%,
+            rgba(244, 213, 141, 0.28) 30%,
+            rgba(244, 213, 141, 0.08) 55%,
+            transparent 75%
+        );
+
+    filter: blur(14px);
+
+    opacity: 0;
+
+    animation:
+        page02LightAppear 3s ease forwards;
+
+    pointer-events: none;
+}
+
+.page02-text {
+    position: relative;
+
+    z-index: 30;
+
+    width: min(88%, 600px);
+
+    text-align: center;
+
+    opacity: 1;
+
+    color: var(--text-main);
+
+    text-shadow:
+        0 5px 18px rgba(3, 5, 12, 0.35);
+}
+
+.page02-text p {
+    margin: 0;
+
+    font-weight: 300;
+
+    line-height: 2;
+}
+
+.page02-title {
+    margin-bottom: 1.8rem !important;
+
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+
+    background: linear-gradient(
+        90deg,
+        #ff4d6d,
+        #ff9f1c,
+        #ffe66d,
+        #2ec4b6,
+        #4dabf7,
+        #9b5de5,
+        #ff4d6d
+    );
+
+    background-size: 300% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: rainbowText 6s linear infinite;
+
+    filter:
+        drop-shadow(0 2px 3px rgba(0, 0, 0, 0.8))
+        drop-shadow(0 0 12px rgba(255, 255, 255, 0.18));
+}
+
+.page02-meaning {
+    margin-bottom: 1.4rem !important;
+
+    font-size: clamp(1.25rem, 5.3vw, 1.75rem);
+
+    font-weight: 400;
+
+    background: linear-gradient(
+        90deg,
+        #ff006e,
+        #ff7b00,
+        #ffe600,
+        #00c9a7,
+        #00b4d8,
+        #4361ee,
+        #8338ec,
+        #ff006e
+    );
+
+    background-size: 400% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: rainbowText 5s linear infinite;
+
+    filter:
+        drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9))
+        drop-shadow(0 0 14px rgba(255, 255, 255, 0.22));
+}
+
+.page02-feeling {
+    font-size: clamp(1.05rem, 4.5vw, 1.4rem);
+
+    line-height: 2.2 !important;
+
+    opacity: 1;
+
+    background: linear-gradient(
+        90deg,
+        #ff5c8a,
+        #ffb703,
+        #80ed99,
+        #48cae4,
+        #4895ef,
+        #b5179e,
+        #ff5c8a
+    );
+
+    background-size: 400% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: rainbowText 7s linear infinite;
+
+    filter:
+        drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9))
+        drop-shadow(0 0 12px rgba(255, 255, 255, 0.18));
+}
+
+@keyframes rainbowText {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 400% 50%;
+    }
+}
+/* =========================================
+   PAGE 01 LAYER
+   ========================================= */
+
+.page01-layer {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            var(--deep-navy) 0%,
+            var(--night-black) 65%
+        );
+}
+
+.page01-layer .particles {
+    position: absolute;
+    inset: 0;
+}
+
+.page01-layer .moon {
+    position: absolute;
+}
+
+.page01-layer .intro-glow {
+    position: absolute;
+}
+
+.page01-layer #content {
+    position: relative;
+
+    z-index: 10;
+
+    width: min(90%, 600px);
+
+    text-align: center;
+}
+
+/* =========================================
+   CINEMATIC LIGHT TRANSITION
+   ========================================= */
+
+#scene::after {
+    content: "";
+
+    position: absolute;
+
+    inset: -20%;
+
+    z-index: 20;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 248, 220, 1) 0%,
+            rgba(255, 233, 176, 0.95) 10%,
+            rgba(244, 213, 141, 0.72) 24%,
+            rgba(230, 184, 92, 0.32) 42%,
+            rgba(24, 40, 74, 0.16) 62%,
+            transparent 78%
+        );
+
+    filter: blur(4px);
+
+    transform: scale(0.18);
+
+    will-change:
+        opacity,
+        transform;
+}
+
+#scene.page2-active::after {
+    animation:
+        cinematicPageTransition 3.2s
+        cubic-bezier(0.22, 0.61, 0.36, 1)
+        forwards;
+}
+
+@keyframes cinematicPageTransition {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.18);
+    }
+
+    18% {
+        opacity: 0.25;
+        transform: scale(0.45);
+    }
+
+    38% {
+        opacity: 0.85;
+        transform: scale(0.85);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+
+    62% {
+        opacity: 0.95;
+        transform: scale(1.45);
+    }
+
+    78% {
+        opacity: 0.55;
+        transform: scale(1.9);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2.8);
+    }
+}
+
+/* =========================================
+   PAGE 02 LIGHT
+   ========================================= */
+
+@keyframes page02LightAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.45);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+}
+
+/* =========================================
+   PAGE 03
+   ========================================= */
+
+.page03-content {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #FFE9B0 0%,
+            #F4D58D 16%,
+            #18284A 45%,
+            #0B1228 75%,
+            #03050C 100%
+        );
+
+    opacity: 1;
+}
+
+/* =========================================
+   PAGE 03 LIGHT
+   ========================================= */
+
+.page03-light {
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%)
+        scale(0.75);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 233, 176, 0.42) 0%,
+            rgba(244, 213, 141, 0.20) 28%,
+            rgba(244, 213, 141, 0.07) 55%,
+            transparent 75%
+        );
+
+    filter: blur(18px);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    animation: page03LightAppear 2.8s ease forwards;
+}
+
+/* =========================================
+   PAGE 03 TEXT
+   ========================================= */
+
+.page03-text {
+    position: relative;
+
+    z-index: 10;
+
+    width: min(88%, 620px);
+
+    padding: 0 8px;
+
+    text-align: center;
+
+    color: var(--text-main);
+
+    opacity: 0;
+
+    animation: page03TextAppear 2.2s ease 0.7s forwards;
+
+    text-shadow:
+        0 2px 14px rgba(3, 5, 12, 0.65),
+        0 0 24px rgba(255, 233, 176, 0.12);
+}
+
+.page03-text p {
+    margin: 0;
+
+    font-size: clamp(
+        1.08rem,
+        4.7vw,
+        1.5rem
+    );
+
+    font-weight: 300;
+
+    line-height: 2.25;
+}
+
+.page03-text p:first-child {
+    margin-bottom: 1.8rem;
+}
+
+/* =========================================
+   HIGHLIGHT WORDS
+   ========================================= */
+
+.page03-text p::first-line {
+    text-shadow:
+        0 2px 14px rgba(3, 5, 12, 0.7);
+}
+
+/* =========================================
+   PAGE 03 ANIMATIONS
+   ========================================= */
+
+@keyframes page03LightAppear {
+    from {
+        opacity: 0;
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.55);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+}
+
+@keyframes page03TextAppear {
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}

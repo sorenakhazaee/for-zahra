@@ -1,0 +1,2696 @@
+/* =========================================
+   STORY PAGES 04 - 13
+   ========================================= */
+
+.story-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #18284A 0%,
+            #0B1228 55%,
+            #03050C 100%
+        );
+
+    color: var(--text-main);
+}
+
+.story-content {
+    position: relative;
+
+    z-index: 10;
+
+    width: min(88%, 650px);
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.story-content p {
+    margin: 0 0 1.8rem;
+
+    font-size: clamp(
+        1.05rem,
+        4.6vw,
+        1.45rem
+    );
+
+    font-weight: 300;
+
+    line-height: 2.25;
+
+    color: var(--text-main);
+
+    text-shadow:
+        0 2px 14px rgba(0, 0, 0, 0.65);
+}
+
+.story-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   SHORT PAGES
+   ========================================= */
+
+.story-short {
+    max-width: 600px;
+}
+
+.story-short p {
+    font-size: clamp(
+        1.2rem,
+        5.2vw,
+        1.65rem
+    );
+}
+
+/* =========================================
+   HIGHLIGHTS
+   ========================================= */
+
+.story-highlight {
+    color: var(--warm-gold) !important;
+
+    font-size: clamp(
+        1.15rem,
+        5vw,
+        1.6rem
+    ) !important;
+
+    font-weight: 400 !important;
+
+    text-shadow:
+        0 2px 14px rgba(0, 0, 0, 0.75),
+        0 0 18px rgba(244, 213, 141, 0.20) !important;
+}
+
+.story-main-highlight {
+    font-size: clamp(
+        1.5rem,
+        7vw,
+        2.2rem
+    ) !important;
+}
+
+/* =========================================
+   PAGE 04
+   ========================================= */
+
+.story-page-04 {
+    background:
+        radial-gradient(
+            circle at center,
+            #FFE9B0 0%,
+            #F4D58D 10%,
+            #18284A 40%,
+            #0B1228 72%,
+            #03050C 100%
+        );
+}
+
+/* =========================================
+   PAGE 05
+   ========================================= */
+
+.story-page-05 {
+    background:
+        radial-gradient(
+            circle at center,
+            #18284A 0%,
+            #111A35 38%,
+            #0B1228 68%,
+            #03050C 100%
+        );
+}
+
+/* =========================================
+   PAGE 06
+   ========================================= */
+
+.story-page-06 {
+    background:
+        radial-gradient(
+            circle at center,
+            #0F1934 0%,
+            #080F24 48%,
+            #03050C 100%
+        );
+}
+
+.story-page-06 .story-content p {
+    font-size: clamp(
+        1.25rem,
+        5.5vw,
+        1.7rem
+    );
+}
+
+/* =========================================
+   PAGE 07
+   ========================================= */
+
+.story-page-07 {
+    background:
+        radial-gradient(
+            circle at center,
+            #101D3D 0%,
+            #0B1228 55%,
+            #03050C 100%
+        );
+}
+
+/* =========================================
+   PAGE 08
+   ========================================= */
+
+.story-page-08 {
+    background:
+        radial-gradient(
+            circle at center,
+            #0B1228 0%,
+            #060B19 55%,
+            #03050C 100%
+        );
+}
+
+.story-page-08 .story-highlight {
+    margin-bottom: 2rem;
+}
+
+.story-pause {
+    color: var(--text-muted) !important;
+
+    font-size: clamp(
+        1.1rem,
+        4.8vw,
+        1.45rem
+    ) !important;
+}
+
+/* =========================================
+   PAGE 09
+   ========================================= */
+
+.story-page-09 {
+    background:
+        radial-gradient(
+            circle at center,
+            #263A61 0%,
+            #18284A 35%,
+            #0B1228 68%,
+            #03050C 100%
+        );
+}
+
+.story-words {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.7rem;
+
+    margin-top: 2rem;
+}
+
+.story-words span {
+    color: var(--warm-gold);
+
+    font-size: clamp(
+        1.2rem,
+        5vw,
+        1.6rem
+    );
+
+    line-height: 1.8;
+
+    text-shadow:
+        0 0 16px rgba(244, 213, 141, 0.22),
+        0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* =========================================
+   PAGE 10
+   ========================================= */
+
+.story-page-10 {
+    background:
+        radial-gradient(
+            circle at center,
+            #0C152D 0%,
+            #070D1D 55%,
+            #03050C 100%
+        );
+}
+
+/* =========================================
+   PAGE 11
+   ========================================= */
+
+.story-page-11 {
+    background:
+        radial-gradient(
+            circle at center,
+            #263B60 0%,
+            #18284A 40%,
+            #0B1228 70%,
+            #03050C 100%
+        );
+}
+
+/* =========================================
+   PAGE 12
+   ========================================= */
+
+.story-page-12 {
+    background:
+        radial-gradient(
+            circle at center,
+            #314B70 0%,
+            #18284A 40%,
+            #0B1228 72%,
+            #03050C 100%
+        );
+}
+
+.story-page-12 .story-content p {
+    font-size: clamp(
+        1.15rem,
+        5vw,
+        1.55rem
+    );
+}
+
+.story-heart {
+    margin-top: 2rem;
+
+    font-size: 1.8rem;
+
+    filter:
+        drop-shadow(
+            0 0 14px rgba(255, 100, 100, 0.35)
+        );
+}
+
+/* =========================================
+   PAGE 13
+   ========================================= */
+
+.story-page-13 {
+    background:
+        radial-gradient(
+            circle at center,
+            #FFE9B0 0%,
+            #F4D58D 12%,
+            #C69C54 28%,
+            #263B60 48%,
+            #0B1228 75%,
+            #03050C 100%
+        );
+}
+
+.story-page-13 .story-content p {
+    text-shadow:
+        0 2px 16px rgba(0, 0, 0, 0.75),
+        0 0 18px rgba(255, 233, 176, 0.12);
+}
+
+/* =========================================
+   STORY TRANSITIONS
+   ========================================= */
+
+.story-layer {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#scene.story-page-04-active .story-page-04,
+#scene.story-page-05-active .story-page-05,
+#scene.story-page-06-active .story-page-06,
+#scene.story-page-07-active .story-page-07,
+#scene.story-page-08-active .story-page-08,
+#scene.story-page-09-active .story-page-09,
+#scene.story-page-10-active .story-page-10,
+#scene.story-page-11-active .story-page-11,
+#scene.story-page-12-active .story-page-12,
+#scene.story-page-13-active .story-page-13 {
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
+}
+
+
+/* =========================================
+   SUN / ECLIPSE SYSTEM
+   ========================================= */
+
+.story-sun-system,
+.eclipse-system {
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   FULL SUN — PAGES 02 - 04
+   ========================================= */
+
+.story-sun {
+    position: absolute;
+
+    /*
+     * بزرگ‌تر شده تا با خورشید صفحه 14
+     * هماهنگ باشد.
+     */
+    width: min(64vw, 330px);
+    height: min(64vw, 330px);
+
+    left: 50%;
+    top: 48%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+}
+
+.story-sun-core,
+.eclipse-sun-core {
+    position: absolute;
+
+    inset: 20%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #FFFBE8 0%,
+            #FFE9A8 35%,
+            #F4C95D 72%,
+            #E6B85C 100%
+        );
+
+    /*
+     * هاله کمتر و ظریف‌تر
+     */
+    box-shadow:
+        0 0 18px rgba(255, 239, 194, 0.78),
+        0 0 40px rgba(244, 213, 141, 0.34),
+        0 0 75px rgba(230, 184, 92, 0.16);
+}
+
+.story-sun-glow,
+.eclipse-sun-glow {
+    position: absolute;
+
+    inset: -14%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 239, 194, 0.22) 0%,
+            rgba(244, 213, 141, 0.10) 32%,
+            rgba(230, 184, 92, 0.03) 55%,
+            transparent 72%
+        );
+
+    filter: blur(7px);
+}
+
+
+/* =========================================
+   ECLIPSE SUN — PAGES 05 - 13
+   ========================================= */
+
+.eclipse-sun {
+    position: absolute;
+
+    width: min(64vw, 330px);
+    height: min(64vw, 330px);
+
+    left: 50%;
+    top: 48%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   ECLIPSE MOON
+   ========================================= */
+
+.eclipse-moon {
+    position: absolute;
+
+    /*
+     * ماه عمداً کوچک‌تر از خورشید است.
+     */
+    width: min(45vw, 230px);
+    height: min(45vw, 230px);
+
+    left: 12%;
+    top: 48%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 38% 34%,
+            #18284A 0%,
+            #0B1228 58%,
+            #03050C 100%
+        );
+
+    box-shadow:
+        0 0 24px rgba(3, 5, 12, 0.72);
+
+    z-index: 3;
+
+    /*
+     * حرکت نرم بین صفحات
+     */
+    transition:
+        left 1.8s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+
+/* =========================================
+   PAGE 05 → 09
+   ورود تدریجی ماه
+   ========================================= */
+
+#scene.story-page-05-active .eclipse-moon {
+    left: 30%;
+}
+
+#scene.story-page-06-active .eclipse-moon {
+    left: 38%;
+}
+
+#scene.story-page-07-active .eclipse-moon {
+    left: 44%;
+}
+
+#scene.story-page-08-active .eclipse-moon {
+    left: 48%;
+}
+
+#scene.story-page-09-active .eclipse-moon {
+    left: 50%;
+}
+
+
+/* =========================================
+   PAGE 10 → 13
+   رفع بسیار آهسته کسوف
+   ========================================= */
+
+#scene.story-page-10-active .eclipse-moon {
+    left: 53%;
+}
+
+#scene.story-page-11-active .eclipse-moon {
+    left: 57%;
+}
+
+#scene.story-page-12-active .eclipse-moon {
+    left: 61%;
+}
+
+#scene.story-page-13-active .eclipse-moon {
+    left: 62%;
+    transition:
+        left 1s cubic-bezier(0.45, 0, 0.55, 1);
+    animation: none !important;
+}
+
+```css
+/* =========================================
+   PAGE 13 → PAGE 14
+   محو شدن ماه بدون حرکت
+   ========================================= */
+
+#scene.page14-active .story-page-13 .eclipse-moon {
+    left: 62%;
+    opacity: 0;
+    transition:
+        opacity 0.8s ease,
+        left 0s;
+}
+```
+/* =========================================
+   PAGE 13 → PAGE 14
+   حذف فوری لایه صفحه 13
+   ========================================= */
+
+#scene.page14-active .story-page-13 {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+#scene.page14-active .story-page-13 .eclipse-moon {
+    left: 61% !important;
+    opacity: 0 !important;
+    transition: none !important;
+    animation: none !important;
+}
+
+/* =========================================
+   ECLIPSE HALO
+   ========================================= */
+
+#scene.story-page-09-active .eclipse-sun-glow,
+#scene.story-page-10-active .eclipse-sun-glow,
+#scene.story-page-11-active .eclipse-sun-glow,
+#scene.story-page-12-active .eclipse-sun-glow,
+#scene.story-page-13-active .eclipse-sun-glow {
+    opacity: 0.68;
+
+    transform: scale(1.02);
+}
+
+
+/* =========================================
+   PAGE 14 — ECLIPSE ENDS
+   ========================================= */
+
+.page14-content {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center 48%,
+            #FFEFC2 0%,
+            #F4D58D 12%,
+            #D4A956 25%,
+            #4B5365 43%,
+            #18284A 65%,
+            #0B1228 82%,
+            #03050C 100%
+        );
+
+    color: var(--text-main);
+}
+
+
+/* =========================================
+   PAGE 14 ECLIPSE SYSTEM
+   ========================================= */
+
+.page14-eclipse-system {
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   PAGE 14 SUN
+   ========================================= */
+
+.page14-sun {
+    position: absolute;
+
+    /*
+     * همان اندازه‌ی خورشید صفحات 02 - 04
+     */
+    width: min(64vw, 330px);
+    height: min(64vw, 330px);
+
+    left: 50%;
+    top: 48%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+}
+
+.page14-sun-core {
+    position: absolute;
+
+    inset: 20%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #FFFBE8 0%,
+            #FFE9A8 35%,
+            #F4C95D 72%,
+            #E6B85C 100%
+        );
+
+    box-shadow:
+        0 0 18px rgba(255, 239, 194, 0.82),
+        0 0 42px rgba(244, 213, 141, 0.38),
+        0 0 80px rgba(230, 184, 92, 0.18);
+}
+
+.page14-sun-glow {
+    position: absolute;
+
+    inset: -14%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 239, 194, 0.26) 0%,
+            rgba(244, 213, 141, 0.11) 32%,
+            rgba(230, 184, 92, 0.03) 55%,
+            transparent 72%
+        );
+
+    filter: blur(7px);
+}
+
+/* =========================================
+   PAGE 14 SUN REVEAL
+   ========================================= */
+
+.page14-sun-core {
+    animation:
+        page14SunReturn
+        5s ease-in-out
+        0.3s forwards;
+}
+
+.page14-sun-glow {
+    animation:
+        page14GlowReturn
+        5s ease-in-out
+        0.3s forwards;
+}
+
+
+/* =========================================
+   PAGE 14 TEXT
+   ========================================= */
+
+.page14-text {
+    position: relative;
+
+    z-index: 10;
+
+    width: min(88%, 650px);
+
+    padding: 20px;
+
+    text-align: center;
+
+    opacity: 0;
+
+    animation:
+        page14TextAppear
+        2.4s ease
+        1.2s forwards;
+}
+
+.page14-text p {
+    margin: 0 0 1.6rem;
+
+    font-size: clamp(
+        1.05rem,
+        4.6vw,
+        1.45rem
+    );
+
+    font-weight: 300;
+
+    line-height: 2.2;
+
+    color: var(--text-main);
+
+    text-shadow:
+        0 2px 14px rgba(0, 0, 0, 0.7),
+        0 0 18px rgba(255, 233, 176, 0.12);
+}
+
+.page14-text p:last-of-type {
+    margin-bottom: 0;
+}
+
+.page14-final {
+    margin-top: 1rem !important;
+
+    color: var(--warm-gold) !important;
+
+    font-size: clamp(
+        1.25rem,
+        5.5vw,
+        1.75rem
+    ) !important;
+
+    font-weight: 400 !important;
+
+    text-shadow:
+        0 0 20px rgba(244, 213, 141, 0.45),
+        0 2px 14px rgba(0, 0, 0, 0.75) !important;
+}
+
+.page14-heart {
+    margin-top: 1.5rem;
+
+    font-size: 1.7rem;
+
+    filter:
+        drop-shadow(
+            0 0 14px rgba(255, 100, 100, 0.4)
+        );
+}
+
+
+/* =========================================
+   PAGE 14 ANIMATIONS
+   ========================================= */
+
+
+@keyframes page14SunReturn {
+
+    0% {
+        opacity: 0.72;
+    }
+
+    35% {
+        opacity: 0.84;
+    }
+
+    70% {
+        opacity: 0.96;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes page14GlowReturn {
+
+    0% {
+        opacity: 0.45;
+        transform: scale(0.82);
+    }
+
+    35% {
+        opacity: 0.62;
+        transform: scale(0.92);
+    }
+
+    70% {
+        opacity: 0.82;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+}
+
+@keyframes page14TextAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .story-sun,
+    .eclipse-sun,
+    .page14-sun {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .eclipse-moon,
+    .page14-moon {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+/* =========================================
+   PAGE 14 — MOON REMOVED
+   ========================================= */
+
+.page14-moon {
+    display: none !important;
+    animation: none !important;
+}
+
+/* =========================================
+   AMBIENT LIGHT PARTICLES
+   ========================================= */
+
+/* -----------------------------------------
+   PAGES 04 - 13
+   فقط دو لایه ذره‌ای
+   بدون تغییر ساختار صفحات
+   ----------------------------------------- */
+
+.story-layer::before,
+.story-layer::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    background-repeat: no-repeat;
+
+    filter:
+        drop-shadow(
+            0 0 8px rgba(255, 233, 176, 0.45)
+        );
+
+    opacity: 0.55;
+}
+
+
+/* -----------------------------------------
+   لایه اول
+   ----------------------------------------- */
+
+.story-layer::before {
+    background-image:
+
+        radial-gradient(
+            circle at 7% 18%,
+            rgba(255, 248, 220, 0.85) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 16% 43%,
+            rgba(255, 233, 176, 0.70) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 25% 76%,
+            rgba(255, 248, 220, 0.80) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 35% 28%,
+            rgba(255, 233, 176, 0.68) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 44% 62%,
+            rgba(255, 248, 220, 0.82) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 54% 15%,
+            rgba(255, 233, 176, 0.72) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 64% 80%,
+            rgba(255, 248, 220, 0.78) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 73% 38%,
+            rgba(255, 233, 176, 0.74) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 82% 68%,
+            rgba(255, 248, 220, 0.84) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 91% 24%,
+            rgba(255, 233, 176, 0.72) 0 1.5px,
+            transparent 4px
+        );
+
+    animation:
+        storyParticlesOne
+        10s ease-in-out
+        infinite;
+}
+
+
+/* -----------------------------------------
+   لایه دوم
+   ----------------------------------------- */
+
+.story-layer::after {
+    background-image:
+
+        radial-gradient(
+            circle at 9% 61%,
+            rgba(255, 233, 176, 0.68) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 19% 11%,
+            rgba(255, 248, 220, 0.82) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 29% 49%,
+            rgba(255, 233, 176, 0.72) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 39% 87%,
+            rgba(255, 248, 220, 0.78) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 49% 34%,
+            rgba(255, 233, 176, 0.70) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 59% 67%,
+            rgba(255, 248, 220, 0.84) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 69% 9%,
+            rgba(255, 233, 176, 0.68) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 79% 51%,
+            rgba(255, 248, 220, 0.80) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 89% 84%,
+            rgba(255, 233, 176, 0.70) 0 2px,
+            transparent 4px
+        );
+
+    animation:
+        storyParticlesTwo
+        12s ease-in-out
+        1.5s
+        infinite;
+}
+
+
+/* -----------------------------------------
+   حرکت ذرات
+   ----------------------------------------- */
+
+@keyframes storyParticlesOne {
+
+    0% {
+        transform: translate3d(0, 12px, 0);
+    }
+
+    50% {
+        transform: translate3d(10px, -20px, 0);
+    }
+
+    100% {
+        transform: translate3d(-8px, -40px, 0);
+    }
+}
+
+
+@keyframes storyParticlesTwo {
+
+    0% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    50% {
+        transform: translate3d(-12px, -24px, 0);
+    }
+
+    100% {
+        transform: translate3d(8px, -42px, 0);
+    }
+}
+
+
+/* =========================================
+   ECLIPSE — PAGES 05 - 09
+   ========================================= */
+
+#scene.story-page-05-active .story-layer::before,
+#scene.story-page-05-active .story-layer::after,
+#scene.story-page-06-active .story-layer::before,
+#scene.story-page-06-active .story-layer::after,
+#scene.story-page-07-active .story-layer::before,
+#scene.story-page-07-active .story-layer::after,
+#scene.story-page-08-active .story-layer::before,
+#scene.story-page-08-active .story-layer::after,
+#scene.story-page-09-active .story-layer::before,
+#scene.story-page-09-active .story-layer::after {
+    opacity: 0.12;
+}
+
+
+/* =========================================
+   RETURN OF LIGHT — PAGES 10 - 13
+   ========================================= */
+
+#scene.story-page-10-active .story-layer::before,
+#scene.story-page-10-active .story-layer::after {
+    opacity: 0.24;
+}
+
+#scene.story-page-11-active .story-layer::before,
+#scene.story-page-11-active .story-layer::after {
+    opacity: 0.38;
+}
+
+#scene.story-page-12-active .story-layer::before,
+#scene.story-page-12-active .story-layer::after {
+    opacity: 0.52;
+}
+
+#scene.story-page-13-active .story-layer::before,
+#scene.story-page-13-active .story-layer::after {
+    opacity: 0.68;
+}
+
+
+/* =========================================
+   PAGE 14 — BRIGHT PARTICLES
+   ========================================= */
+
+.page14-content::before,
+.page14-content::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    background-repeat: no-repeat;
+
+    filter:
+        drop-shadow(
+            0 0 12px rgba(255, 233, 176, 0.60)
+        );
+
+    opacity: 0.90;
+
+    animation:
+        page14Particles
+        7s ease-in-out
+        infinite;
+}
+
+
+.page14-content::before {
+    background-image:
+
+        radial-gradient(
+            circle at 6% 18%,
+            rgba(255, 248, 220, 0.95) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 16% 43%,
+            rgba(255, 233, 176, 0.88) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 26% 76%,
+            rgba(255, 248, 220, 0.92) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 36% 27%,
+            rgba(255, 233, 176, 0.84) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 46% 61%,
+            rgba(255, 248, 220, 0.94) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 56% 14%,
+            rgba(255, 233, 176, 0.86) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 66% 80%,
+            rgba(255, 248, 220, 0.96) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 76% 38%,
+            rgba(255, 233, 176, 0.88) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 86% 68%,
+            rgba(255, 248, 220, 0.95) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 96% 25%,
+            rgba(255, 233, 176, 0.90) 0 2px,
+            transparent 4px
+        );
+}
+
+
+.page14-content::after {
+    background-image:
+
+        radial-gradient(
+            circle at 10% 87%,
+            rgba(255, 233, 176, 0.86) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 20% 12%,
+            rgba(255, 248, 220, 0.94) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 30% 50%,
+            rgba(255, 233, 176, 0.88) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 40% 84%,
+            rgba(255, 248, 220, 0.92) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 50% 36%,
+            rgba(255, 233, 176, 0.86) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 60% 64%,
+            rgba(255, 248, 220, 0.96) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 70% 8%,
+            rgba(255, 233, 176, 0.88) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 80% 48%,
+            rgba(255, 248, 220, 0.94) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 90% 82%,
+            rgba(255, 233, 176, 0.90) 0 2px,
+            transparent 4px
+        );
+
+    animation-delay: 1.2s;
+}
+
+
+@keyframes page14Particles {
+
+    0%,
+    100% {
+        transform:
+            translate3d(0, 12px, 0)
+            scale(0.99);
+    }
+
+    50% {
+        transform:
+            translate3d(8px, -24px, 0)
+            scale(1.02);
+    }
+}
+
+/* =========================================
+   EARLY LIGHT — PAGES 02 - 04
+   ========================================= */
+
+/* صفحات ۲ و ۳ */
+.page02-content::before,
+.page02-content::after,
+.page03-content::before,
+.page03-content::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    background-repeat: no-repeat;
+
+    filter:
+        drop-shadow(
+            0 0 10px rgba(255, 233, 176, 0.55)
+        );
+
+    opacity: 0.78;
+
+    animation:
+        earlyLightParticles
+        10s ease-in-out
+        infinite;
+}
+
+
+/* لایه اول */
+
+.page02-content::before,
+.page03-content::before {
+    background-image:
+
+        radial-gradient(
+            circle at 7% 18%,
+            rgba(255, 248, 220, 0.95) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 17% 44%,
+            rgba(255, 233, 176, 0.82) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 27% 76%,
+            rgba(255, 248, 220, 0.90) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 37% 28%,
+            rgba(255, 233, 176, 0.78) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 47% 62%,
+            rgba(255, 248, 220, 0.92) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 57% 16%,
+            rgba(255, 233, 176, 0.84) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 67% 80%,
+            rgba(255, 248, 220, 0.90) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 77% 38%,
+            rgba(255, 233, 176, 0.82) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 87% 68%,
+            rgba(255, 248, 220, 0.94) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 96% 24%,
+            rgba(255, 233, 176, 0.80) 0 1.5px,
+            transparent 4px
+        );
+}
+
+
+/* لایه دوم */
+
+.page02-content::after,
+.page03-content::after {
+    background-image:
+
+        radial-gradient(
+            circle at 10% 86%,
+            rgba(255, 233, 176, 0.80) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 20% 12%,
+            rgba(255, 248, 220, 0.92) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 30% 50%,
+            rgba(255, 233, 176, 0.84) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 40% 84%,
+            rgba(255, 248, 220, 0.90) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 50% 36%,
+            rgba(255, 233, 176, 0.82) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 60% 64%,
+            rgba(255, 248, 220, 0.94) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 70% 8%,
+            rgba(255, 233, 176, 0.80) 0 1.5px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 80% 48%,
+            rgba(255, 248, 220, 0.92) 0 2px,
+            transparent 4px
+        ),
+
+        radial-gradient(
+            circle at 90% 82%,
+            rgba(255, 233, 176, 0.84) 0 2px,
+            transparent 4px
+        );
+
+    animation-delay: 1.5s;
+}
+
+
+/* =========================================
+   PAGE 04
+   ========================================= */
+
+.story-page-04::before,
+.story-page-04::after {
+    opacity: 0.82;
+}
+
+
+/* =========================================
+   PARTICLE MOVEMENT
+   ========================================= */
+
+@keyframes earlyLightParticles {
+
+    0% {
+        transform:
+            translate3d(0, 12px, 0);
+    }
+
+    50% {
+        transform:
+            translate3d(10px, -20px, 0);
+    }
+
+    100% {
+        transform:
+            translate3d(-8px, -42px, 0);
+    }
+}
+
+/* =========================================
+   STORY TEXT COLORS
+   JEDEI GREEN — صفحات 03 تا 14
+   ========================================= */
+
+/* PAGE 03 — شروع نور */
+.page03-text p {
+    color: #00A896;
+
+    text-shadow:
+        0 2px 14px rgba(0, 0, 0, 0.65),
+        0 0 18px rgba(0, 168, 150, 0.22);
+}
+
+
+/* PAGE 04 — نور کامل */
+.story-page-04 .story-content p {
+    color: #00A896;
+}
+
+
+/* PAGE 05 — شروع کسوف */
+.story-page-05 .story-content p {
+    color: #009F90;
+}
+
+
+/* PAGE 06 */
+.story-page-06 .story-content p {
+    color: #00978A;
+}
+
+
+/* PAGE 07 */
+.story-page-07 .story-content p {
+    color: #008F83;
+}
+
+
+/* PAGE 08 — تاریکی بیشتر */
+.story-page-08 .story-content p {
+    color: #00877C;
+}
+
+
+/* PAGE 09 — اوج کسوف */
+.story-page-09 .story-content p {
+    color: #008077;
+}
+
+
+/* PAGE 10 — بازگشت نور */
+.story-page-10 .story-content p {
+    color: #00877C;
+}
+
+
+/* PAGE 11 */
+.story-page-11 .story-content p {
+    color: #009083;
+}
+
+
+/* PAGE 12 */
+.story-page-12 .story-content p {
+    color: #009A8C;
+}
+
+
+/* PAGE 13 — بازگشت خورشید */
+.story-page-13 .story-content p {
+    color: #00A394;
+}
+
+
+/* PAGE 14 — نور کامل */
+.page14-text p {
+    color: #00B09E;
+}
+
+/* =========================================
+   SYMBOLIC PEOPLE
+   مردم نمادین — بدون چهره
+   ========================================= */
+
+.symbolic-people {
+    position: absolute;
+    inset: 0;
+
+    z-index: 4;
+
+    pointer-events: none;
+}
+
+
+/* -----------------------------------------
+   بدن ساده‌ی انسان
+   ----------------------------------------- */
+
+.symbolic-person {
+    position: absolute;
+
+    width: 18px;
+    height: 48px;
+
+    bottom: 8%;
+
+    opacity: 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 12%,
+            currentColor 0 7px,
+            transparent 7.5px
+        );
+
+    color: rgba(2, 8, 18, 0.88);
+
+    filter:
+        drop-shadow(
+            0 0 8px rgba(0, 168, 150, 0.10)
+        );
+}
+
+
+/* بدن */
+.symbolic-person::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 17px;
+
+    width: 12px;
+    height: 30px;
+
+    transform: translateX(-50%);
+
+    border-radius:
+        45% 45% 25% 25%;
+
+    background: currentColor;
+}
+
+
+/* دست‌ها */
+.symbolic-person::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 20px;
+
+    width: 34px;
+    height: 8px;
+
+    transform:
+        translateX(-50%)
+        rotate(0deg);
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+
+/* -----------------------------------------
+   جای مردم
+   ----------------------------------------- */
+
+.person-01 {
+    left: 12%;
+    transform: scale(0.82);
+}
+
+.person-02 {
+    left: 27%;
+    transform: scale(0.95);
+}
+
+.person-03 {
+    left: 42%;
+    transform: scale(0.78);
+}
+
+.person-04 {
+    left: 58%;
+    transform: scale(0.90);
+}
+
+.person-05 {
+    left: 73%;
+    transform: scale(0.82);
+}
+
+.person-06 {
+    left: 87%;
+    transform: scale(0.72);
+}
+
+
+/* -----------------------------------------
+   ورود مردم — صفحه ۱۰
+   ----------------------------------------- */
+
+.symbolic-people-enter .symbolic-person {
+    animation:
+        peopleEnter
+        1.8s ease-out
+        forwards;
+}
+
+.symbolic-people-enter .person-01 {
+    animation-delay: 0.1s;
+}
+
+.symbolic-people-enter .person-02 {
+    animation-delay: 0.25s;
+}
+
+.symbolic-people-enter .person-03 {
+    animation-delay: 0.4s;
+}
+
+.symbolic-people-enter .person-04 {
+    animation-delay: 0.55s;
+}
+
+.symbolic-people-enter .person-05 {
+    animation-delay: 0.7s;
+}
+
+.symbolic-people-enter .person-06 {
+    animation-delay: 0.85s;
+}
+
+
+@keyframes peopleEnter {
+    from {
+        opacity: 0;
+        transform:
+            translateY(35px)
+            scale(0.75);
+    }
+
+    to {
+        opacity: 0.62;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* -----------------------------------------
+   دعا — صفحه ۱۱
+   ----------------------------------------- */
+
+.symbolic-people-pray .symbolic-person,
+.symbolic-people-main-prayer .symbolic-person {
+    opacity: 0.68;
+}
+
+
+/* دست‌ها به سمت خورشید */
+.symbolic-people-pray .symbolic-person::before,
+.symbolic-people-main-prayer .symbolic-person::before {
+    top: 14px;
+
+    width: 30px;
+
+    transform:
+        translateX(-50%)
+        rotate(-28deg);
+}
+
+
+/* -----------------------------------------
+   شخصیت اصلی — صفحه ۱۲
+   ----------------------------------------- */
+
+.symbolic-people-main-prayer .person-main {
+    width: 24px;
+    height: 62px;
+
+    left: 50%;
+    bottom: 7%;
+
+    opacity: 0.95;
+
+    color: rgba(0, 168, 150, 0.92);
+
+    transform:
+        translateX(-50%)
+        scale(1.18);
+
+    filter:
+        drop-shadow(
+            0 0 14px rgba(0, 168, 150, 0.38)
+        );
+}
+
+.symbolic-people-main-prayer .person-main::after {
+    width: 15px;
+    height: 40px;
+}
+
+.symbolic-people-main-prayer .person-main::before {
+    width: 40px;
+
+    transform:
+        translateX(-50%)
+        rotate(-32deg);
+}
+
+
+/* -----------------------------------------
+   بازگشت نور — صفحه ۱۳
+   ----------------------------------------- */
+
+.symbolic-people-return .symbolic-person {
+    opacity: 0.88;
+
+    color: rgba(4, 18, 25, 0.76);
+
+    filter:
+        drop-shadow(
+            0 0 10px rgba(0, 168, 150, 0.20)
+        );
+
+    animation:
+        peopleReceiveLight
+        2.5s ease-in-out
+        forwards;
+}
+
+.symbolic-people-return .person-main {
+    opacity: 1;
+
+    color: rgba(0, 168, 150, 0.95);
+
+    filter:
+        drop-shadow(
+            0 0 18px rgba(0, 168, 150, 0.48)
+        );
+}
+
+
+@keyframes peopleReceiveLight {
+    from {
+        opacity: 0.45;
+        filter:
+            drop-shadow(
+                0 0 4px rgba(0, 168, 150, 0.08)
+            );
+    }
+
+    to {
+        opacity: 0.88;
+        filter:
+            drop-shadow(
+                0 0 12px rgba(0, 168, 150, 0.24)
+            );
+    }
+}
+
+
+/* -----------------------------------------
+   موبایل
+   ----------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .symbolic-person {
+        width: 15px;
+        height: 42px;
+    }
+
+    .symbolic-person::after {
+        width: 10px;
+        height: 27px;
+    }
+
+    .symbolic-person::before {
+        width: 28px;
+    }
+
+    .symbolic-people-main-prayer .person-main {
+        width: 21px;
+        height: 56px;
+    }
+
+    .symbolic-people-main-prayer .person-main::after {
+        width: 13px;
+        height: 36px;
+    }
+
+    .symbolic-people-main-prayer .person-main::before {
+        width: 36px;
+    }
+}
+
+/* =========================================
+   SYMBOLIC PEOPLE — FINAL VERSION
+   آدمک‌های نمادین انسانی
+   ========================================= */
+
+.symbolic-people {
+    display: none !important;
+}
+
+
+/* =========================================
+   PEOPLE SYSTEM
+   ========================================= */
+
+.people-system {
+    position: absolute;
+    inset: 0;
+
+    z-index: 4;
+
+    pointer-events: none;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   PERSON
+   ========================================= */
+
+.people-system .symbolic-person {
+    position: absolute;
+
+    left: var(--person-left);
+    bottom: 5%;
+
+    width: 42px;
+    height: 86px;
+
+    opacity: 0;
+
+    transform-origin: 50% 100%;
+
+    color: rgba(3, 13, 22, 0.86);
+
+    z-index: 4;
+
+    animation-delay:
+        calc(var(--person-index) * 0.12s);
+}
+
+
+/* =========================================
+   HEAD
+   ========================================= */
+
+.person-head {
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    width: 19px;
+    height: 19px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+.person-body {
+    position: absolute;
+
+    left: 50%;
+    top: 18px;
+
+    width: 22px;
+    height: 52px;
+
+    transform: translateX(-50%);
+
+    border-radius:
+        45% 45% 18% 18%;
+
+    background: currentColor;
+}
+
+
+/* =========================================
+   ARMS
+   ========================================= */
+
+.person-arm {
+    position: absolute;
+
+    top: 24px;
+
+    width: 34px;
+    height: 8px;
+
+    border-radius: 999px;
+
+    background: currentColor;
+
+    transform-origin: 4px 50%;
+
+    z-index: -1;
+}
+
+
+/* LEFT ARM */
+
+.person-arm-left {
+    left: 2px;
+
+    transform:
+        rotate(22deg);
+}
+
+
+/* RIGHT ARM */
+
+.person-arm-right {
+    right: 2px;
+
+    transform-origin: calc(100% - 4px) 50%;
+
+    transform:
+        rotate(-22deg);
+}
+
+
+/* =========================================
+   HANDS
+   ========================================= */
+
+.person-hand {
+    position: absolute;
+
+    top: 50%;
+
+    width: 9px;
+    height: 9px;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+
+/* LEFT HAND */
+
+.person-arm-left .person-hand {
+    left: -3px;
+}
+
+
+/* RIGHT HAND */
+
+.person-arm-right .person-hand {
+    right: -3px;
+}
+
+
+/* =========================================
+   PAGES 01–04
+   DANCE
+   ========================================= */
+
+#scene.page01-active .people-system .symbolic-person,
+#scene.page02-active .people-system .symbolic-person,
+#scene.page03-active .people-system .symbolic-person,
+#scene.page04-active .people-system .symbolic-person,
+
+#scene.story-page-01-active .people-system .symbolic-person,
+#scene.story-page-02-active .people-system .symbolic-person,
+#scene.story-page-03-active .people-system .symbolic-person,
+#scene.story-page-04-active .people-system .symbolic-person {
+
+    opacity: 0.78;
+
+    animation:
+        peopleDance
+        calc(2.4s + (var(--person-index) * 0.14s))
+        ease-in-out
+        infinite;
+}
+
+
+/* دست‌ها به سمت آدم کناری */
+
+#scene.page01-active .person-arm-left,
+#scene.page02-active .person-arm-left,
+#scene.page03-active .person-arm-left,
+#scene.page04-active .person-arm-left,
+
+#scene.story-page-01-active .person-arm-left,
+#scene.story-page-02-active .person-arm-left,
+#scene.story-page-03-active .person-arm-left,
+#scene.story-page-04-active .person-arm-left {
+
+    transform:
+        rotate(-32deg);
+}
+
+
+#scene.page01-active .person-arm-right,
+#scene.page02-active .person-arm-right,
+#scene.page03-active .person-arm-right,
+#scene.page04-active .person-arm-right,
+
+#scene.story-page-01-active .person-arm-right,
+#scene.story-page-02-active .person-arm-right,
+#scene.story-page-03-active .person-arm-right,
+#scene.story-page-04-active .person-arm-right {
+
+    transform:
+        rotate(32deg);
+}
+
+
+/* =========================================
+   DANCE MOTION
+   ========================================= */
+
+@keyframes peopleDance {
+
+    0% {
+        transform:
+            translateY(3px)
+            rotate(-2deg);
+    }
+
+    25% {
+        transform:
+            translateY(-6px)
+            rotate(3deg);
+    }
+
+    50% {
+        transform:
+            translateY(2px)
+            rotate(-1deg);
+    }
+
+    75% {
+        transform:
+            translateY(-5px)
+            rotate(2deg);
+    }
+
+    100% {
+        transform:
+            translateY(3px)
+            rotate(-2deg);
+    }
+}
+
+
+/* =========================================
+   SPECIAL PERSON — HAPPY
+   ========================================= */
+
+#scene.page01-active .special-person,
+#scene.page02-active .special-person,
+#scene.page03-active .special-person,
+#scene.page04-active .special-person,
+
+#scene.story-page-01-active .special-person,
+#scene.story-page-02-active .special-person,
+#scene.story-page-03-active .special-person,
+#scene.story-page-04-active .special-person {
+
+    width: 50px;
+    height: 98px;
+
+    color:
+        rgba(0, 168, 150, 0.96);
+
+    opacity: 1;
+
+    filter:
+        drop-shadow(
+            0 0 15px rgba(0, 168, 150, 0.42)
+        );
+
+    animation:
+        specialDance
+        2.1s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes specialDance {
+
+    0% {
+        transform:
+            translateY(4px)
+            scale(1.05)
+            rotate(-3deg);
+    }
+
+    25% {
+        transform:
+            translateY(-9px)
+            scale(1.12)
+            rotate(5deg);
+    }
+
+    50% {
+        transform:
+            translateY(2px)
+            scale(1.08)
+            rotate(-4deg);
+    }
+
+    75% {
+        transform:
+            translateY(-8px)
+            scale(1.14)
+            rotate(4deg);
+    }
+
+    100% {
+        transform:
+            translateY(4px)
+            scale(1.05)
+            rotate(-3deg);
+    }
+}
+
+
+/* =========================================
+   PAGES 05–13
+   PRAYER
+   ========================================= */
+
+#scene.page05-active .people-system .symbolic-person,
+#scene.page06-active .people-system .symbolic-person,
+#scene.page07-active .people-system .symbolic-person,
+#scene.page08-active .people-system .symbolic-person,
+#scene.page09-active .people-system .symbolic-person,
+#scene.page10-active .people-system .symbolic-person,
+#scene.page11-active .people-system .symbolic-person,
+#scene.page12-active .people-system .symbolic-person,
+#scene.page13-active .people-system .symbolic-person,
+
+#scene.story-page-05-active .people-system .symbolic-person,
+#scene.story-page-06-active .people-system .symbolic-person,
+#scene.story-page-07-active .people-system .symbolic-person,
+#scene.story-page-08-active .people-system .symbolic-person,
+#scene.story-page-09-active .people-system .symbolic-person,
+#scene.story-page-10-active .people-system .symbolic-person,
+#scene.story-page-11-active .people-system .symbolic-person,
+#scene.story-page-12-active .people-system .symbolic-person,
+#scene.story-page-13-active .people-system .symbolic-person {
+
+    opacity: 0.72;
+
+    animation:
+        peoplePrayer
+        calc(3s + (var(--person-index) * 0.16s))
+        ease-in-out
+        infinite;
+}
+
+
+/* =========================================
+   PRAYER ARMS
+   ========================================= */
+
+#scene.page05-active .person-arm-left,
+#scene.page06-active .person-arm-left,
+#scene.page07-active .person-arm-left,
+#scene.page08-active .person-arm-left,
+#scene.page09-active .person-arm-left,
+#scene.page10-active .person-arm-left,
+#scene.page11-active .person-arm-left,
+#scene.page12-active .person-arm-left,
+#scene.page13-active .person-arm-left,
+
+#scene.story-page-05-active .person-arm-left,
+#scene.story-page-06-active .person-arm-left,
+#scene.story-page-07-active .person-arm-left,
+#scene.story-page-08-active .person-arm-left,
+#scene.story-page-09-active .person-arm-left,
+#scene.story-page-10-active .person-arm-left,
+#scene.story-page-11-active .person-arm-left,
+#scene.story-page-12-active .person-arm-left,
+#scene.story-page-13-active .person-arm-left {
+
+    top: 21px;
+    left: 4px;
+
+    transform:
+        rotate(-62deg);
+}
+
+
+#scene.page05-active .person-arm-right,
+#scene.page06-active .person-arm-right,
+#scene.page07-active .person-arm-right,
+#scene.page08-active .person-arm-right,
+#scene.page09-active .person-arm-right,
+#scene.page10-active .person-arm-right,
+#scene.page11-active .person-arm-right,
+#scene.page12-active .person-arm-right,
+#scene.page13-active .person-arm-right,
+
+#scene.story-page-05-active .person-arm-right,
+#scene.story-page-06-active .person-arm-right,
+#scene.story-page-07-active .person-arm-right,
+#scene.story-page-08-active .person-arm-right,
+#scene.story-page-09-active .person-arm-right,
+#scene.story-page-10-active .person-arm-right,
+#scene.story-page-11-active .person-arm-right,
+#scene.story-page-12-active .person-arm-right,
+#scene.story-page-13-active .person-arm-right {
+
+    top: 21px;
+    right: 4px;
+
+    transform:
+        rotate(62deg);
+}
+
+
+/* =========================================
+   PRAYER MOTION
+   ========================================= */
+
+@keyframes peoplePrayer {
+
+    0% {
+        transform:
+            translateY(2px)
+            rotate(-2deg);
+    }
+
+    25% {
+        transform:
+            translateY(-4px)
+            rotate(2deg);
+    }
+
+    50% {
+        transform:
+            translateY(1px)
+            rotate(0deg);
+    }
+
+    75% {
+        transform:
+            translateY(-5px)
+            rotate(-2deg);
+    }
+
+    100% {
+        transform:
+            translateY(2px)
+            rotate(-2deg);
+    }
+}
+
+
+/* =========================================
+   SPECIAL PERSON — PRAYER
+   ========================================= */
+
+#scene.page05-active .special-person,
+#scene.page06-active .special-person,
+#scene.page07-active .special-person,
+#scene.page08-active .special-person,
+#scene.page09-active .special-person,
+#scene.page10-active .special-person,
+#scene.page11-active .special-person,
+#scene.page12-active .special-person,
+#scene.page13-active .special-person,
+
+#scene.story-page-05-active .special-person,
+#scene.story-page-06-active .special-person,
+#scene.story-page-07-active .special-person,
+#scene.story-page-08-active .special-person,
+#scene.story-page-09-active .special-person,
+#scene.story-page-10-active .special-person,
+#scene.story-page-11-active .special-person,
+#scene.story-page-12-active .special-person,
+#scene.story-page-13-active .special-person {
+
+    width: 50px;
+    height: 102px;
+
+    color:
+        rgba(0, 168, 150, 0.96);
+
+    opacity: 1;
+
+    filter:
+        drop-shadow(
+            0 0 17px rgba(0, 168, 150, 0.40)
+        );
+
+    animation:
+        specialPrayer
+        3s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes specialPrayer {
+
+    0% {
+        transform:
+            translateY(2px)
+            scale(1.06)
+            rotate(-2deg);
+    }
+
+    25% {
+        transform:
+            translateY(-6px)
+            scale(1.12)
+            rotate(2deg);
+    }
+
+    50% {
+        transform:
+            translateY(1px)
+            scale(1.08)
+            rotate(0deg);
+    }
+
+    75% {
+        transform:
+            translateY(-7px)
+            scale(1.13)
+            rotate(-2deg);
+    }
+
+    100% {
+        transform:
+            translateY(2px)
+            scale(1.06)
+            rotate(-2deg);
+    }
+}
+
+
+/* =========================================
+   PAGE 14 — CELEBRATION
+   ========================================= */
+
+#scene.page14-active .people-system .symbolic-person {
+
+    opacity: 0.92;
+
+    color:
+        rgba(5, 24, 29, 0.76);
+
+    animation:
+        finalDance
+        calc(2.2s + (var(--person-index) * 0.13s))
+        ease-in-out
+        infinite;
+}
+
+
+/* باز شدن دست‌ها */
+
+#scene.page14-active .person-arm-left {
+
+    top: 25px;
+    left: 2px;
+
+    transform:
+        rotate(-38deg);
+}
+
+
+#scene.page14-active .person-arm-right {
+
+    top: 25px;
+    right: 2px;
+
+    transform:
+        rotate(38deg);
+}
+
+
+/* =========================================
+   FINAL DANCE
+   ========================================= */
+
+@keyframes finalDance {
+
+    0% {
+        transform:
+            translateY(4px)
+            rotate(-3deg)
+            scale(1);
+    }
+
+    20% {
+        transform:
+            translateY(-8px)
+            rotate(4deg)
+            scale(1.04);
+    }
+
+    40% {
+        transform:
+            translateY(2px)
+            rotate(-5deg)
+            scale(1.01);
+    }
+
+    60% {
+        transform:
+            translateY(-9px)
+            rotate(5deg)
+            scale(1.05);
+    }
+
+    80% {
+        transform:
+            translateY(1px)
+            rotate(-3deg)
+            scale(1.02);
+    }
+
+    100% {
+        transform:
+            translateY(4px)
+            rotate(-3deg)
+            scale(1);
+    }
+}
+
+
+/* =========================================
+   SPECIAL PERSON — FINAL
+   شادترین آدم جمع
+   ========================================= */
+
+#scene.page14-active .people-system .special-person {
+
+    width: 54px;
+    height: 108px;
+
+    color:
+        rgba(0, 168, 150, 0.98);
+
+    opacity: 1;
+
+    filter:
+        drop-shadow(
+            0 0 22px rgba(0, 168, 150, 0.58)
+        );
+
+    animation:
+        finalSpecialDance
+        1.8s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes finalSpecialDance {
+
+    0% {
+        transform:
+            translateY(5px)
+            scale(1.08)
+            rotate(-4deg);
+    }
+
+    20% {
+        transform:
+            translateY(-12px)
+            scale(1.17)
+            rotate(6deg);
+    }
+
+    40% {
+        transform:
+            translateY(2px)
+            scale(1.11)
+            rotate(-6deg);
+    }
+
+    60% {
+        transform:
+            translateY(-13px)
+            scale(1.20)
+            rotate(7deg);
+    }
+
+    80% {
+        transform:
+            translateY(1px)
+            scale(1.13)
+            rotate(-4deg);
+    }
+
+    100% {
+        transform:
+            translateY(5px)
+            scale(1.08)
+            rotate(-4deg);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .people-system .symbolic-person {
+
+        width: 34px;
+        height: 70px;
+    }
+
+    .person-head {
+
+        width: 15px;
+        height: 15px;
+    }
+
+    .person-body {
+
+        top: 15px;
+
+        width: 18px;
+        height: 43px;
+    }
+
+    .person-arm {
+
+        top: 20px;
+
+        width: 28px;
+        height: 6px;
+    }
+
+    .person-hand {
+
+        width: 7px;
+        height: 7px;
+    }
+
+    .people-system .special-person {
+
+        width: 43px;
+        height: 86px;
+    }
+
+    .people-system .special-person .person-head {
+
+        width: 18px;
+        height: 18px;
+    }
+
+    .people-system .special-person .person-body {
+
+        width: 21px;
+        height: 51px;
+    }
+}
