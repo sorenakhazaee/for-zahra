@@ -1,0 +1,14 @@
+:root {
+    --night-black: #03050C;
+    --deep-navy: #0B1228;
+    --night-blue: #18284A;
+
+    --soft-gold: #E6B85C;
+    --warm-gold: #F4D58D;
+    --sunlight: #FFE9B0;
+
+    --text-main: #FFF8E8;
+    --text-muted: #C8C1B2;
+
+    --page-transition: 1.4s;
+}
