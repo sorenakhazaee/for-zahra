@@ -1,142 +1,192 @@
-```css
 @font-face {
-    font-family: "Vazirmatn";
-    src: url("../assets/fonts/Vazirmatn-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Vazirmatn";
+  src: url("../assets/fonts/Vazirmatn-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Vazirmatn";
-    src: url("../assets/fonts/Vazirmatn-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Vazirmatn";
+  src: url("../assets/fonts/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-
 
 /* =========================================
    GLOBAL
    ========================================= */
 
 html {
-    background: var(--night-black);
+  background: var(--night-black);
 }
 
 body {
-    background: var(--night-black);
-    color: var(--text-main);
+  background: var(--night-black);
+  color: var(--text-main);
 
-    font-family: "Vazirmatn", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 300;
 
-    font-weight: 300;
-
-    overflow: hidden;
+  overflow: hidden;
 }
 
 button {
-    border: none;
-    background: none;
-    color: inherit;
-    cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
 }
-
 
 /* =========================================
    STORY PAGE PROGRESS
    ========================================= */
 
 #page-indicator {
-    position: fixed;
+  position: fixed;
 
-    left: 50%;
-    bottom: 24px;
+  left: 50%;
+  bottom: 24px;
 
-    transform: translateX(-50%);
+  transform: translateX(-50%);
 
-    z-index: 999999;
+  z-index: 999999;
 
-    pointer-events: none;
+  pointer-events: none;
 }
-
 
 /* =========================================
    PROGRESS CONTAINER
    ========================================= */
 
 .page-progress {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    gap: 7px;
+  gap: 7px;
 
-    min-width: 100px;
-}
-
-
-/* =========================================
-   PROGRESS CONTAINER
-   ========================================= */
-
-.page-progress {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 7px;
-
-    width: 100px;
+  width: 100px;
 }
 
 #current-page-number {
-    color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.95);
 
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .page-progress-divider {
-    color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 #total-page-number {
-    color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.45);
 }
-
 
 /* =========================================
    PROGRESS TRACK
    ========================================= */
 
 .page-progress-track {
-    position: relative;
-```
-/* TEST PROGRESS LINE */
+  position: relative;
 
-.page-progress-track {
-    display: block !important;
+  width: 100px;
+  height: 4px;
 
-    width: 100px !important;
-    height: 4px !important;
-
-    background: red !important;
-
-    position: relative !important;
-
-    overflow: visible !important;
+  overflow: visible;
 }
 
+/* =========================================
+   PROGRESS FILL
+   ========================================= */
+
 .page-progress-fill {
-    display: block !important;
+  position: absolute;
 
-    width: 50% !important;
-    height: 4px !important;
+  top: 0;
+  left: 0;
 
-    background: yellow !important;
+  width: 50%;
+  height: 4px;
+}
 
-    position: absolute !important;
+/* =========================================
+   BACKGROUND MUSIC CONTROL
+   ========================================= */
 
-    top: 0 !important;
-    left: 0 !important;
+#musicToggle {
+  position: fixed !important;
+
+  left: 50% !important;
+  top: 20px !important;
+
+  right: auto !important;
+  bottom: auto !important;
+
+  transform: translateX(-50%) !important;
+
+  width: 44px !important;
+  height: 44px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+
+  font-size: 20px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 2147483647 !important;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* =========================================
+   MUSIC BUTTON HOVER
+   ========================================= */
+
+#musicToggle:hover {
+  transform: translateX(-50%) scale(1.08) !important;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+/* =========================================
+   MUSIC BUTTON ACTIVE
+   ========================================= */
+
+#musicToggle:active {
+  transform: translateX(-50%) scale(0.95) !important;
+}
+
+#musicToggle {
+  position: fixed !important;
+  left: 50vw !important;
+  top: 20px !important;
+
+  right: auto !important;
+  bottom: auto !important;
+
+  margin: 0 !important;
+
+  transform: translateX(-50%) !important;
+
+  z-index: 2147483647 !important;
 }
